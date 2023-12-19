@@ -14,13 +14,14 @@
 
         section {
             position: relative;
-            width: 400px;
-            height: 200px;
-            margin: 300px auto;
+            width: 350px;
+            height: 400px;
+            margin: 250px auto;
             transform-style: preserve-3d;
             /* 添加动画效果 */
             animation: rotate 10s linear infinite;
-            background: url(media/pig.jpg) no-repeat;
+            background: url(media/1.jpg)   no-repeat ;
+            background-size: contain
         }
 
         section:hover {
@@ -44,7 +45,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url(media/dog.jpg) no-repeat;
+  
         }
 
         section div:nth-child(1) {
@@ -75,17 +76,33 @@
             /* 先旋转好了再 移动距离 */
             transform: rotateY(300deg) translateZ(300px);
         }
+        img {
+            max-width: 80%;
+            height: auto;
+        }
     </style>
 </head>
 
 <body>
     <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>
+            <img src="media\1.jpg"  alt="">
+        </div>
+        <div>
+            <img src="media\292e226a205c01257813be5f724469e.jpg" alt="">
+        </div>
+        <div>
+            <img src="media\525f11da181df041fcb8816d4c8ecd0.jpg" alt="">
+        </div>
+        <div>
+            <img src="media\4418022b28f97aef2f340f2e8252998.jpg" alt="">
+        </div>
+        <div>
+            <img src="media\dda3b25384267018ac76829e4191e98.jpg" alt="">
+        </div>
+        <div>
+            <img src="media\edc58c687433884204fbb7b669ad805.jpg" alt="">
+        </div>
     </section>
 </body>
 
