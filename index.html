@@ -21,7 +21,8 @@
             /* 添加动画效果 */
             animation: rotate 10s linear infinite;
             background: url(media/1.jpg)   no-repeat ;
-            background-size: contain
+            background-size: contain;
+            /* animation-play-state : running; */
         }
 
         section:hover {
@@ -104,6 +105,15 @@
             <img src="media\edc58c687433884204fbb7b669ad805.jpg" alt="">
         </div>
     </section>
+    <script>
+        var touch=document.querySelector('section')
+        touch.addEventListener('touchstart',()=>{
+             touch.style.animationPlayState = 'paused';
+        })
+        touch.addEventListener('touchend',()=>{
+             touch.style.animationPlayState = 'running';
+        })
+    </script>
 </body>
 
 </html>
