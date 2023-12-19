@@ -82,16 +82,12 @@
             max-width: 90%;
             height: auto;
         }
-        audio{
-            display: none
-        }
+    
     </style>
 </head>
 
 <body>
-    <audio controls  >
-        <source src="小保安 - 我想念 (1_3X版).flac"  type="audio/mpeg">
-    </audio>
+
     <section>
         <div>
             <img src="media\0b6e9285fa5eb7afd0755d52536e489.jpg" alt="">
@@ -118,14 +114,12 @@
         var div =document.querySelector('img')
         touch.addEventListener('touchstart', () => {
             touch.style.animationPlayState = 'paused';
-            vo.play()
+
         })
         touch.addEventListener('touchend', () => {
             touch.style.animationPlayState = 'running';
         })
-        touch.addEventListener('touchstart', () => {   
-                div.play()
-            })
+
     </script>
 </body>
 
